@@ -1,6 +1,6 @@
-# Rocket Academy Coding Bootcamp: Project 1: Frontend App
+# Rocket Academy Coding Bootcamp: Create React App Template
 
-TODO(kai): Link to Rocket's Bootcamp Project 1 page
+TODO: Add exercise name to README title and link to exercise page
 
 ## Available Scripts
 
