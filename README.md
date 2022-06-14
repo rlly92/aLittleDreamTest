@@ -1,6 +1,6 @@
 # Rocket Academy Coding Bootcamp: Create React App Template
 
-TODO: Add exercise name to README title, link to exercise page, update app name in `package.json`, run `npm i` to update `package-lock.json`.
+TODO: Add exercise name to README title, update app name in `package.json`, run `npm i` to update `package-lock.json`.
 
 ## Available Scripts
 
