@@ -1,0 +1,6 @@
+type FormInputTest @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  PhoneNumber: AWSPhone
+  Email: AWSEmail
+}
