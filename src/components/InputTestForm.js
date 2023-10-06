@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { API } from "aws-amplify";
+import { createFormInputTest } from "./graphql/mutations";
 
 const InputTestForm = () => {
   // Define state variables to store the input values
@@ -7,8 +9,27 @@ const InputTestForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // PUT LOGIC FOR REFERENCING AWS DB AND SUBMISSION OF DATA INPUTS HERE:
+    await API.graphql({
+      query: createFormInputTest,
+      variables: {
+        input: {
+          Name: "Lorem ipsum dolor sit amet",
+          PhoneNumber: "(555) 123-6789",
+          Email: "test12346789@testemailtestemail.com",
+        },
+      },
+    })
+      .then((res) => {
+        // Show successmessage
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
     console.log("Name:", name);
     console.log("Phone Number:", phoneNumber);
     console.log("Email:", email);
