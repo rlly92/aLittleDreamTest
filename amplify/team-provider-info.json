@@ -10,6 +10,11 @@
       "StackName": "amplify-amplify8535a10352004-staging-100426",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:504225512188:stack/amplify-amplify8535a10352004-staging-100426/bbc2cb50-642f-11ee-adfd-06633ce8ca0e",
       "AmplifyAppId": "d1i0rivezy1nn"
+    },
+    "categories": {
+      "api": {
+        "aLittleDreamTest": {}
+      }
     }
   }
 }
