@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { API } from "aws-amplify";
-import { createFormInputTest } from "./graphql/mutations";
+import { createFormInputTest } from "../graphql/mutations";
 
 const InputTestForm = () => {
   // Define state variables to store the input values
