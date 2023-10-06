@@ -17,9 +17,9 @@ const InputTestForm = () => {
       query: createFormInputTest,
       variables: {
         input: {
-          Name: "Lorem ipsum dolor sit amet",
-          PhoneNumber: "(555) 123-6789",
-          Email: "test12346789@testemailtestemail.com",
+          Name: name,
+          PhoneNumber: phoneNumber,
+          Email: email,
         },
       },
     });
