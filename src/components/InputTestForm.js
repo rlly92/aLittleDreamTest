@@ -22,14 +22,8 @@ const InputTestForm = () => {
           Email: "test12346789@testemailtestemail.com",
         },
       },
-    })
-      .then((res) => {
-        // Show successmessage
-        console.log(res);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    });
+
     console.log("Name:", name);
     console.log("Phone Number:", phoneNumber);
     console.log("Email:", email);
