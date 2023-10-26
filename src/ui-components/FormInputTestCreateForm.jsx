@@ -103,7 +103,7 @@ export default function FormInputTestCreateForm(props) {
             }
           });
           await API.graphql({
-            query: createFormInputTest,
+            query: createFormInputTest.replaceAll("__typename", ""),
             variables: {
               input: {
                 ...modelFields,

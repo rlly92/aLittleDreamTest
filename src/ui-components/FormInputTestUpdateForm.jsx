@@ -52,7 +52,7 @@ export default function FormInputTestUpdateForm(props) {
       const record = idProp
         ? (
             await API.graphql({
-              query: getFormInputTest,
+              query: getFormInputTest.replaceAll("__typename", ""),
               variables: { id: idProp },
             })
           )?.data?.getFormInputTest
@@ -126,7 +126,7 @@ export default function FormInputTestUpdateForm(props) {
             }
           });
           await API.graphql({
-            query: updateFormInputTest,
+            query: updateFormInputTest.replaceAll("__typename", ""),
             variables: {
               input: {
                 id: formInputTestRecord.id,
